@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glass button style */
+.glass-btn {
+  padding: 0.75rem 2rem;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+/* Click animation */
+.method-btn.clicked {
+  transform: scale(1.1);
+  transition: transform 0.15s ease;
+}
+
+/* Methods list */
+.method-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
